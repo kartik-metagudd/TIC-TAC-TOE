@@ -170,13 +170,20 @@ void move(char& player,char& shape){
     for(int i=0;i<3&&!MoveMade;i++){
         for(int j=0;j<3&&!MoveMade;j++){
             if(ttt[i][j]=='_'){
+
                 ttt[i][j]=player;
                 val=checkWin(player);
                 ttt[i][j]='_';
+
                 ttt[i][j]=shape;
                 val2=checkWin(shape);
                 ttt[i][j]='_';
-                if(val||val2){
+
+                if(val2){
+                    ttt[i][j]=shape;
+                    MoveMade=true;
+                }
+                else if (val){
                     ttt[i][j]=shape;
                     MoveMade=true;
                 }
@@ -186,6 +193,7 @@ void move(char& player,char& shape){
         if(!MoveMade){
             for(int i=0;i<3&&!MoveMade;i++){
                 for(int j=0;j<3&&!MoveMade;j++){
+
                     if(ttt[i][j]=='_'){
                         ttt[i][j]=shape;
                         MoveMade=true;
