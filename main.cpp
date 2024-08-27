@@ -200,60 +200,7 @@ void move(char& player,char& shape){
 }
 
 
-void displayRules() {
-    char out;
-    cout<<endl;
-    cout << " Welcome to Tic-Tac-Toe!" << endl;
-    cout << " The game is played on a 3x3 grid. Here are the rules:" << endl;
-    
-    // Display a blank grid
-    cout << "\n The board looks like this at the start, with the co-ordinates :" << endl;
-    cout << " (0,0) | (0,1) | (0,2) " << endl;
-    cout << " ------|-------|-------" << endl;
-    cout << " (1,0) | (1,1) | (1,2) " << endl;
-    cout << " ------|-------|-------" << endl;
-    cout << " (2,0) | (2,1) | (2,2) " << endl;
 
-    cout << "\n Players take turns placing their mark (X or O) in an empty spot on the grid." << endl;
-
-    // Example of winning horizontally
-    cout << "\n To win, you need to get three of your marks in a row. For example:" << endl;
-    cout << "  X | X | X" << endl;
-    cout << " ---|---|---" << endl;
-    cout << "    |   |  " << endl;
-    cout << " ---|---|---" << endl;
-    cout << "    |   |  " << endl;
-    cout << " This is a horizontal win for X!" << endl;
-
-    // Example of winning vertically
-    cout << "\n You can also win by getting three in a column:" << endl;
-    cout << "  O |   |  " << endl;
-    cout << " ---|---|---" << endl;
-    cout << "  O |   |  " << endl;
-    cout << " ---|---|---" << endl;
-    cout << "  O |   |  " << endl;
-    cout << " This is a vertical win for O!" << endl;
-
-    // Example of winning diagonally
-    cout << "\n Or diagonally:" << endl;
-    cout << "  X |   |  " << endl;
-    cout << " ---|---|---" << endl;
-    cout << "    | X |  " << endl;
-    cout << " ---|---|---" << endl;
-    cout << "    |   | X" << endl;
-    cout << " This is a diagonal win for X!" << endl;
-
-    cout << "\n If all 9 spaces are filled and no player has three in a row, the game ends in a draw." << endl;
-    cout << " Let's start the game! , scroll up! to read," << endl;
-    while(1){
-    cout<<">> Enter 0 to go [back] : ";
-    cin>>out;
-    if(out=='0')
-    break;
-    else 
-    cout<<" Invalid input :( "<<endl;
-}
-}
 
 
 void start(){
@@ -265,18 +212,12 @@ void start(){
     cout<<"______TIC-TAC-TOE______"<<endl<<endl;
     cout<<"1] ENGIN(Computer) "<<endl;
     cout<<"2] TWO PLAYER "<<endl;
-    cout<<"3] HOW TO PLAY ?? "<<endl<<endl;
     while(!right){
         cout<<">> Enter your choice(integer 1 , 2 or 3) : ";
         cin>>choice;
         if(choice =='1'){
             right = true;
             engin();
-        }
-        else if(choice =='3'){
-            displayRules();
-            right=true;
-            start();
         }
         else if (choice =='2'){
             right=true;
