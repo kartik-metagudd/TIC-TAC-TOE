@@ -63,9 +63,9 @@ void input(int& turn) {
     while (!validInput) {
 
         if (turn % 2 == 0) {
-            cout << ">> "<<p2<< "'s turn, Enter coordinates with a space between them: ";
+            cout << ">> "<<p2<< "'s turn, Enter coordinates with a space between them (row , column): ";
         } else {
-            cout <<">> "<<p1<< "'s turn, Enter coordinates with a space between them: ";
+            cout << ">> "<<p1<< "'s turn, Enter coordinates with a space between them (row , column) : ";
         }
 
         cin >> a >> b;
@@ -129,7 +129,7 @@ void engin(){
         if(turn%2!=0){
             right=false;
             while(!right){
-                cout<<">> Enter co-ordinates with space between them : ";
+                cout<<">> Enter co-ordinates with space between them (row , column) : ";
                 cin>>a>>b;
                 cout<<endl;
                 if (a >= 0 && a <= 2 && b >= 0 && b <= 2 && ttt[a][b] == '_'){
