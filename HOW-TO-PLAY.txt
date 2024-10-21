@@ -1,0 +1,38 @@
+Welcome to Tic-Tac-Toe!
+The game is played on a 3x3 grid. Here are the rules:
+
+The board looks like this at the start, with the coordinates:
+(0,0) | (0,1) | (0,2)
+------|-------|-------
+(1,0) | (1,1) | (1,2)
+------|-------|-------
+(2,0) | (2,1) | (2,2)
+
+Players take turns placing their mark (X or O) in an empty spot on the grid.
+
+To win, you need to get three of your marks in a row. For example:
+ X | X | X
+---|---|---
+   |   |  
+---|---|---
+   |   |  
+This is a horizontal win for X!
+
+You can also win by getting three in a column:
+ O |   |  
+---|---|---
+ O |   |  
+---|---|---
+ O |   |  
+This is a vertical win for O!
+
+Or diagonally:
+ X |   |  
+---|---|---
+   | X |  
+---|---|---
+   |   | X
+This is a diagonal win for X!
+
+If all 9 spaces are filled and no player has three in a row, the game ends in a draw.
+Let's start the game! Scroll up to read the instructions.
