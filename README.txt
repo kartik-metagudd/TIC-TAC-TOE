@@ -1,3 +1,12 @@
+# REQUIRMENTS
+
+Make sure u have/installed  'g++' compiler,
+
+goto website "https://sourceforge.net/projects/mingw/" download 'Mingw' and select g++ compiler while install,
+
+add the lib and bin file path to environmental variables path , if still don't get it, watch a video on how to do it.
+
+
 # Tic-Tac-Toe Game
 
 This is a simple Tic-Tac-Toe game implemented in C++. It allows for single-player and two-player modes.
